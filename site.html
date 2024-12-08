@@ -4,9 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Little Furry Paws</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section h2 {
+            color: #4CAF50;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Gallery specific styles */
+        .gallery-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            justify-items: center;
+        }
+        .gallery-images img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Testimonials styles */
+        .testimonial {
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Contact form styles */
+        .container {
+            width: 60%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .email-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .email-link a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 16px;
+        }
+        .email-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>Welcome to Little Furry Paws!</h1>
         <nav>
@@ -18,51 +154,21 @@
             </ul>
         </nav>
     </header>
-    
+
+    <!-- Home Page: Our Services -->
     <section id="description">
         <h2>Our Services</h2>
-        <p>Hi there
-
-My name is Elena, and I currently reside in Inverkeithing, Fife.
-
-With a lifelong passion for caring for cats and dogs, I have transitioned this dedication into a professional service, providing pet care within the comfort of their home environment. I offer flexible visiting options, ranging from once daily visits to multiple visits throughout the day, and I am also available for overnight stays.
-
-I am willing to travel to your location in Edinburgh, Fife, Glasgow, Perth, and all areas in between, ensuring that I can meet both you and your beloved pets. During our meeting, I would appreciate your guidance on the specifics of your pet's routine and environment.
-
-Please feel free to reach out to me in the comments section, and I will confirm my availability and provide you with a tailored quote.
-
-Please visit the testimonial section to see what the other clients have said.
-
-Best regards,  
-Elena  </p>
+        <p>Hi there!<br><br>
+           My name is Elena, and I currently reside in Inverkeithing, Fife.<br><br>
+           With a lifelong passion for caring for cats and dogs, I have transitioned this dedication into a professional service, providing pet care within the comfort of their home environment. I offer flexible visiting options, ranging from once daily visits to multiple visits throughout the day, and I am also available for overnight stays.<br><br>
+           I am willing to travel to your location in Edinburgh, Fife, Glasgow, Perth, and all areas in between, ensuring that I can meet both you and your beloved pets. During our meeting, I would appreciate your guidance on the specifics of your pet's routine and environment.<br><br>
+           Please feel free to reach out to me in the comments section, and I will confirm my availability and provide you with a tailored quote.<br><br>
+           Please visit the testimonial section to see what the other clients have said.<br><br>
+           Best regards,<br>  
+           Elena</p>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Little Furry Paws. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Little Furry Paws</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Little Furry Paws Gallery</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <!-- Gallery Page -->
     <section id="gallery">
         <h2>Our Little Friends</h2>
         <div class="gallery-images">
@@ -78,96 +184,56 @@ Elena  </p>
             <img src="images/10.jpeg" alt="Pet 10">
             <img src="images/11.jpeg" alt="Pet 11">
             <img src="images/12.jpeg" alt="Pet 12">
-
-            <!-- Add more images as needed -->
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Little Furry Paws. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials - Little Furry Paws</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>What Our Clients Say</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <!-- Testimonials Page -->
     <section id="testimonials">
         <h2>Client Feedback</h2>
         <div class="testimonial">
-            <p>"Elena was a lovley lady and very relaxed and easy going was a pleasure to have her looking after Olly and Gracie would trust her anytime to be with my kittens and play with them thanks again Elena"</p>
+            <p>"Elena was a lovely lady and very relaxed and easy-going. It was a pleasure to have her looking after Olly and Gracie. I would trust her anytime to be with my kittens and play with them. Thanks again, Elena."</p>
             <p>- Jacqueline W.</p>
         </div>
         <div class="testimonial">
-            <p>"Elena was brilliant with Sandy. She is knowledgeable and has a lot of experience with cats being a cat mum herself. She genuinely cared for Sandy and kept me updated with messages and pictures of my beloved boy regularly and was happy to answer any questions to reassure me, the anxious cat mum. I can highly recommend Elena."</p>
+            <p>"Elena was brilliant with Sandy. She is knowledgeable and has a lot of experience with cats being a cat mom herself. She genuinely cared for Sandy and kept me updated with messages and pictures of my beloved boy regularly. I can highly recommend Elena."</p>
             <p>- Debbie S.</p>
         </div>
-        <!-- More testimonials can be added -->
     </section>
 
-    <footer>
-        <p>&copy; 2024 Little Furry Paws. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Little Furry Paws</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Contact Little Furry Paws</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="contact-form">
-        <h2>Inquire About Availability and Quotes</h2>
-        <form id="inquiryForm">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send Inquiry</button>
+    <!-- Contact Page -->
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We’re here to help! Please fill out the form below with the necessary details, and we’ll get back to you as soon as possible.</p>
+        <form action="mailto:dutacata1992@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="fullName">Full Name (required)</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City/Town (required)</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number (required)</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address (required)</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="enquiry">Enquiry (required)</label>
+                <textarea id="enquiry" name="enquiry" required></textarea>
+            </div>
+            <button type="submit">Send Enquiry</button>
         </form>
-    </section>
+        <div class="email-link">
+            <p>Or email us directly at: <a href="mailto:dutacata1992@gmail.com">dutacata1992@gmail.com</a></p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Little Furry Paws. All rights reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
